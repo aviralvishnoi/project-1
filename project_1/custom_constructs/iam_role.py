@@ -16,11 +16,11 @@ class IamRole(Construct):
      
     @property
     def get_lambda_role_name(self):
-        return IamRole.__lambda_role.role_name
+        return IamRole.__lambda_role
 
     @property
     def get_lambda_role_arn(self):
-        return IamRole.__lambda_role.role_arn
+        return IamRole.__lambda_role
 
     def create_iam_role(self, props):
         lambda_iam_role = iam.Role(

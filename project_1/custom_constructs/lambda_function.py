@@ -22,6 +22,6 @@ class LambdaFunction(Construct):
             runtime=lambda_function.Runtime.PYTHON_3_9,
             handler="lambda_function.lambda_handler",
             code=lambda_function.Code.from_asset("src"),
-            role=f"{props.lambda_iam_role}"
+            role=props.lambda_iam_role
         )
         return hello_lambda
