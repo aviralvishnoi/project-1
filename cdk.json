@@ -15,6 +15,20 @@
     ]
   },
   "context": {
+    "region": "eu-central-1",
+    "dev":{
+      "account": "320722179933",
+      "app_name": "jai-shree-ram",
+      "team": "ramayan",
+      "s3":{
+        "life_cycle_config":{
+          "infrequent_access": 45,
+          "glacier": 90,
+          "deep_archive": 180
+        },
+        "versioning": true
+      }
+    },
     "@aws-cdk/aws-lambda:recognizeLayerVersion": true,
     "@aws-cdk/core:checkSecretUsage": true,
     "@aws-cdk/core:target-partitions": [
